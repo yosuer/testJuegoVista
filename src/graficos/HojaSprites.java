@@ -11,6 +11,12 @@ public class HojaSprites {
 	private final int alto;
 	public final int[] pixeles;
 
+	// coleccion de hojas de sprites
+	public static HojaSprites general = new HojaSprites(
+			"/texturas/general.png", 150, 30);
+
+	// fin de la coleccion
+
 	public HojaSprites(final String ruta, final int ancho, final int alto) {
 		this.ancho = ancho;
 		this.alto = alto;
@@ -27,5 +33,13 @@ public class HojaSprites {
 			e.printStackTrace();
 		}
 
+	}
+
+	public int getAncho() {
+		return ancho;
+	}
+
+	public int getAlto() {
+		return alto;
 	}
 }
