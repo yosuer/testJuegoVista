@@ -1,12 +1,10 @@
 package graficos;
 
-
 public final class Pantalla {
 
 	private final int ancho;
 	private final int alto;
-
-	private final int[] pixeles;
+	public final int[] pixeles;
 
 	// Temporal
 	private final static int LADO_SPRITE = 30;
@@ -37,7 +35,7 @@ public final class Pantalla {
 					continue;
 
 				// temporal
-				pixeles[posicionX + posicionY * ancho] = Sprite.tierra.pixeles[(x & LADO_SPRITE)
+				pixeles[posicionX + posicionY * ancho] = Sprite.tierra.pixeles[(x & MASCARA_SPRITE)
 						+ (y & MASCARA_SPRITE) * LADO_SPRITE];
 
 			}

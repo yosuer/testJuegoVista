@@ -10,12 +10,13 @@ public final class Sprite {
 	public int[] pixeles;
 	private final HojaSprites hoja;
 
-	public static Sprite tierra = new Sprite(30, 0, 4, HojaSprites.general);
+	public static Sprite tierra = new Sprite(30, 0, 0, HojaSprites.general);
 
 	public Sprite(final int lado, final int columna, final int fila,
 			final HojaSprites hoja) {
 		this.lado = lado;
-		this.pixeles = new int[lado * lado];
+		pixeles = new int[lado * lado];
+
 		this.x = columna * lado;
 		this.y = fila * lado;
 		this.hoja = hoja;
