@@ -24,9 +24,9 @@ public class HojaSprites {
 		pixeles = new int[ancho * alto];
 
 		BufferedImage imagen;
-
 		try {
 			imagen = ImageIO.read(HojaSprites.class.getResource(ruta));
+
 			imagen.getRGB(0, 0, ancho, alto, pixeles, 0, ancho);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -36,10 +36,7 @@ public class HojaSprites {
 	}
 
 	public int getAncho() {
-		return ancho;
+		return this.ancho;
 	}
 
-	public int getAlto() {
-		return alto;
-	}
 }

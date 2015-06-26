@@ -10,7 +10,7 @@ public final class Pantalla {
 	private final static int LADO_SPRITE = 30;
 	private final static int MASCARA_SPRITE = LADO_SPRITE - 1;
 
-	// temporal
+	// fin Temporal
 
 	public Pantalla(final int ancho, final int alto) {
 		this.ancho = ancho;

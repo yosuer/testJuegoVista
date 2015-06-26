@@ -10,7 +10,7 @@ public final class Sprite {
 	public int[] pixeles;
 	private final HojaSprites hoja;
 
-	public static Sprite tierra = new Sprite(30, 0, 0, HojaSprites.general);
+	public static Sprite tierra = new Sprite(30, 4, 0, HojaSprites.general);
 
 	public Sprite(final int lado, final int columna, final int fila,
 			final HojaSprites hoja) {
